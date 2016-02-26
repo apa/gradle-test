@@ -73,9 +73,6 @@ public class BookControllerTest {
     @Test
     public void testGetBookDetailsApi(){
         Book book = new Book("Book1", "ÏSBN1", "Author1", 200)
-        
-        book.asSimpleMap()
-        
         book.setId(new Random(100).nextInt() + "")
         bookRepository.save(book)
 
